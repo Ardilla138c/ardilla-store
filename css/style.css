@@ -1,0 +1,186 @@
+/* ===== GENERAL ===== */
+body {
+  background-color: #0b0b0b;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #f2f2f2;
+  margin: 0;
+  position: relative;
+}
+
+/* ===== MARCA DE AGUA GENERAL (para productos.html y todas las páginas) ===== */
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: url("../img/logo-ardilla.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.035;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(90deg, #000, #151515);
+  border-bottom: 2px solid #c9a23f;
+}
+
+.navbar-brand {
+  color: #c9a23f !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.slogan {
+  color: #9ccc65;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* ===== HERO (solo index) ===== *
+.hero {
+  position: relative;
+  background: radial-gradient(
+    circle at top,
+    rgba(28,28,28,0.9),
+    rgba(0,0,0,0.95)
+  );
+  padding: 90px 20px;
+  text-align: center;
+  overflow: hidden;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Marca de agua más visible SOLO en el hero */
+
+
+/* Contenido encima del logo */
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  color: #c9a23f;
+  font-weight: 700;
+}
+
+.hero p {
+  color: #d0d0d0;
+}
+
+/* ===== BOTONES ===== */
+.btn-success {
+  background: linear-gradient(135deg, #2e7d32, #4caf50);
+  border: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+}
+
+/* ===== TARJETAS ===== */
+.card {
+  background-color: #151515;
+  border: 1px solid #c9a23f33;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  animation: fadeUp 0.8s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card.producto {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Marca de agua dentro de cada producto */
+.card.producto::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  background: url("../img/logo-ardilla.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.producto img {
+  height: 220px;
+  object-fit: contain;   /* 👈 clave */
+  background-color: #0b0b0b;
+  padding: 10px;
+  border-bottom: 1px solid #c9a23f33;
+}
+
+
+
+.card h5 {
+  color: #c9a23f;
+}
+
+.card .precio {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #d6d6d6;      /* más clara */
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #000;
+  border-top: 2px solid #c9a23f;
+  text-align: center;
+  padding: 18px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .producto img {
+    height: 180px;
+  }
+  
+}
