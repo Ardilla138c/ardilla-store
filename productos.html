@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <title>Productos | Ardilla Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
 
@@ -20,146 +23,343 @@
 <div class="container mt-4">
   <div class="row g-4">
 
-    <!-- PRODUCTO 1 -->
-    <div class="col-md-4">
+
+
+
+    
+    <!-- PRODUCTO 1 --> <div class="col-md-4">
       <div class="card producto">
-        <img src="img/termo-matero-heizen.jpg" alt="Termo Matero">
+        <div id="carouselProducto1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/placha-sokani2.jpg" class="d-block w-100" alt="plancha-sokani">
+    </div>
+    <div class="carousel-item">
+      <img src="img/plancha-sokani.gif" class="d-block w-100" alt="placha-sokani2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/plancha-sokani2.gif" class="d-block w-100" alt="plancha-sokani3">
+    </div>
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto1" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
         <div class="card-body">
-          <h5>Termo Matero Heizen</h5>
+          <h5>Plancha Vertical de ropa Sokany</h5>
           <p class="descripcion">
-            🧉 Set Matero Premium - 5 Piezas Capacidad: 120 ml 
-            (Ideal para uso personal).
-            Colores Disponibles: Blanco, 
-            Negro, Azul, Verde, Lila y Rosa.
+            Plancha a vapor portátil Sokany de 1700W, ideal para eliminar 
+            arrugas y malos olores rápidamente. Cuenta con vapor potente, tanque de 360 ml 
+            y diseño ergonómico. 
+          
+            Perfecta para uso en casa o viajes.
           </p>
           <p class="precio">Bs 300</p>
           <p class="cuotas">Consulta los precios a credito</p>
-          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa el Termo Matero"
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa la Plancha Vertical de ropa Sokany"
              class="btn btn-success w-100" target="_blank">
             WhatsApp
           </a>
         </div>
       </div>
-    </div>
+    </div>  <!-- PRODUCTO 1 -->
 
 
-    <!-- PRODUCTO 2 -->
-    <div class="col-md-4">
+        <!-- PRODUCTO 2 --> <div class="col-md-4">
       <div class="card producto">
-        <img src="img/mochila-para-laptp.jpg" alt="Mochila Para Laptop">
+        <div id="carouselProducto2" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/mochila1.jpg" class="d-block w-100" alt="mochila1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/mochila2.jpg" class="d-block w-100" alt="mochila2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/mochila3.jpg" class="d-block w-100" alt="mochila3">
+    </div>
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto2" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
         <div class="card-body">
-          <h5>Mochila Para Laptop</h5>
+          <h5>Mochila para Laptop</h5>
           <p class="descripcion">
-            Mochila tipo ejecutiva  para  computadora
-            portatil, ideal para oficinas y viajes
-            3 colores disponibles, negro azul y plomo.
+            Mochila moderna y resistente, ideal para uso diario o trabajo. 
+            Cuenta con múltiples compartimentos, diseño elegante, 
+            espacio para laptop y accesorios, ofreciendo comodidad, organización
+             y estilo.
           </p>
           <p class="precio">Bs 350</p>
           <p class="cuotas">Consulta los precios a credito</p>
-          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa La mochila para Laptop"
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa la Mochila para Laptop"
              class="btn btn-success w-100" target="_blank">
             WhatsApp
           </a>
         </div>
       </div>
-    </div>
-    <!-- PRODUCTO 2 -->
+    </div>  <!-- PRODUCTO 2 -->
 
-
-
-
-    <!-- PRODUCTO 3 -->
-    <div class="col-md-4">
+    <!-- PRODUCTO 3 --> <div class="col-md-4">
       <div class="card producto">
-        <img src="img/plancha-vetical-sokani.jpg" alt="Ardilla Store">
+        <div id="carouselProducto3" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/licuadora-personal1.gif" class="d-block w-100" alt="licuadora-personal1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/licuadora-personal2.gif" class="d-block w-100" alt="licuadora-personal2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/licuadora-personal3.gif" class="d-block w-100" alt="licuadora-personal3">
+    </div>
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto3" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
         <div class="card-body">
-          <h5>Plancha Vertical</h5>
+          <h5>Licuadora Sokany personal</h5>
           <p class="descripcion">
-            Plancha Vertical A Vapor 
-            marca Sokany Vaporizador De Mano
-            Plancha Vertical A Vapor Sokany Vaporizador De Mano
-            portatil de 1500w 
+            Licuadora personal Sokany con potente motor, ideal para jugos y batidos. 
+            Incluye 2 vasos resistentes con tapa toma todo, prácticos para llevar bebidas de forma cómoda, 
+            segura y rápida a cualquier lugar.
           </p>
-          <p class="precio">Bs 300</p>
+          <p class="precio">Bs 200</p>
           <p class="cuotas">Consulta los precios a credito</p>
-          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa la Plancha vertical"
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa la Licuadora Sokany personal"
              class="btn btn-success w-100" target="_blank">
             WhatsApp
           </a>
         </div>
       </div>
-    </div>
-    <!-- PRODUCTO 3 -->
+    </div>  <!-- PRODUCTO 3 -->
 
-    <!-- PRODUCTO 4 -->
-    <div class="col-md-4">
-      <div class="card producto">
-        <img src="img/set-de-cocina.jpg" alt="Set de Cocina">
-        <div class="card-body">
-          <h5>Set de Cocina</h5>
-          <p class="descripcion">
-           Set Utensillos De Cocina 
-           de Silicona Antiadherentes
-           ideal para evitar rayones.
-           3 colores disponibles blanco, marmolado y negro.
+
     
-          </p>
-          <p class="precio">Bs 250</p>
-          <p class="cuotas">Consulta los precios a credito</p>
-          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa Set  De Cocina "
-             class="btn btn-success w-100" target="_blank">
-            WhatsApp
-          </a>
-        </div>
-      </div>
+    <!-- PRODUCTO 4 --> <div class="col-md-4">
+      <div class="card producto">
+        <div id="carouselProducto4" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/caldera1.gif" class="d-block w-100" alt="caldera1">
     </div>
-    <!-- PRODUCTO 4 -->
-   
-   
-    <!-- PRODUCTO 5 -->
-    <div class="col-md-4">
-      <div class="card producto">
-        <img src="img/sarten-de-ceramica.jpg" alt="Sarten de Cermanica">
+    <div class="carousel-item">
+      <img src="img/caldera2.gif" class="d-block w-100" alt="caldera1">
+    </div>
+  
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto4" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
         <div class="card-body">
-          <h5>Sarten de Cermanica</h5>
+          <h5>Caldera Silbadora 6.5 Lt</h5>
           <p class="descripcion">
-           Sarten con tapa de ceramica Marca Brikenia de  30 cm 
-           piedra volcanica  resistente.
-           Colores Disponibles,  rojo  y negro.
-    
+            Caldera silbadora de acero inoxidable Cosmos Innovation, resistente y elegante. Con capacidad de 6.5 litros, 
+            ideal para hervir agua de forma rápida y segura. Su diseño práctico emite un silbido al alcanzar ebullición.
           </p>
           <p class="precio">Bs 280</p>
           <p class="cuotas">Consulta los precios a credito</p>
-          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa el Sarten de Cermanica "
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa la Caldera Silbadora 6.5 Lt"
              class="btn btn-success w-100" target="_blank">
             WhatsApp
           </a>
         </div>
       </div>
-    </div>
-    <!-- PRODUCTO 5 -->
+    </div>  <!-- PRODUCTO 4 -->
 
-   <!-- PRODUCTO 6 -->
-    <div class="col-md-4">
+        <!-- PRODUCTO 5 --> <div class="col-md-4">
       <div class="card producto">
-        <img src="img/termo-con-parlante.jpg" alt="Termo con Parlante">
+        <div id="carouselProducto5" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/wiskera1.jpg" class="d-block w-100" alt="wiskera1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/wiskera2.jpg" class="d-block w-100" alt="wiskera2">
+    </div>
+  
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto5" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
         <div class="card-body">
-          <h5>Termo con Parlante</h5>
+          <h5>Set Licorero</h5>
           <p class="descripcion">
-           Termo  con Parlante de la marca Heizen  disponible en  
-           variedad de colores, cuenta con bluetooth 
-           se recarga en solo una hora mediante un puerto USB tipo C
+            Juego de 5 piezas wiskero Le Weiya con decantador de vidrio elegante. Ideal para servir whisky, vino o licores con estilo.
+             Incluye vasos resistentes, perfecto para reuniones o como regalo sofisticado.
           </p>
-          <p class="precio">Bs 135</p>
+          <p class="precio">Bs 80</p>
           <p class="cuotas">Consulta los precios a credito</p>
-          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa el Termo con Parlante "
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa el Set Licorero"
              class="btn btn-success w-100" target="_blank">
             WhatsApp
           </a>
         </div>
       </div>
+    </div>  <!-- PRODUCTO 5 -->
+
+
+    <!-- PRODUCTO 6 --> <div class="col-md-4">
+      <div class="card producto">
+        <div id="carouselProducto6" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/jarra-con vasos1.jpg" class="d-block w-100" alt="jarra1">
     </div>
-    <!-- PRODUCTO 5 -->
+    <div class="carousel-item">
+      <img src="img/jarra-con vasos2.jpg" class="d-block w-100" alt="jarra2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/jarra-con vasos3.jpg" class="d-block w-100" alt="jarra3">
+    </div>
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto6" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto6" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+        <div class="card-body">
+          <h5>Jarra y vasos Bree Kettle</h5>
+          <p class="descripcion">
+            Set de 7 piezas Bree Kettle Waterware: Jarra con textura martillada ámbar, 
+            tapa dorada y seis vasos a juego. Diseño moderno y elegante para servir con distinción. 
+            Perfecto para entretenimiento
+          </p>
+          <p class="precio">Bs 110</p>
+          <p class="cuotas">Consulta los precios a credito</p>
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa la Jarra y vasos Bree Kettle"
+             class="btn btn-success w-100" target="_blank">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>  <!-- PRODUCTO 6 -->
+
+     <!-- PRODUCTO 7 --> <div class="col-md-4">
+      <div class="card producto">
+        <div id="carouselProducto7" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/cup1.jpg" class="d-block w-100" alt="cup1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/cup2.jpg" class="d-block w-100" alt="cup2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/cupe3.jpg" class="d-block w-100" alt="cupe3">
+    </div>
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto7" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto7" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+        <div class="card-body">
+          <h5>Tazas de vidrio para cafe </h5>
+          <p class="descripcion">
+            Set de 6 tazas de vidrio JX (240ml) para café o té. Diseño elegante con base reforzada y asa ergonómica. 
+            Ideales para capuchinos y bebidas calientes, aportando estilo y durabilidad a tu mesa.
+          </p>
+          <p class="precio">Bs 65</p>
+          <p class="cuotas">Consulta los precios a credito</p>
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa las Tazas de vidrio para cafe"
+             class="btn btn-success w-100" target="_blank">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>  <!-- PRODUCTO 7 -->
+
+         <!-- PRODUCTO 8 --> <div class="col-md-4">
+      <div class="card producto">
+        <div id="carouselProducto8" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/termo con parlante.jpg" class="d-block w-100" alt="termoparlante1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/termo con parlante2.jpg" class="d-block w-100" alt="termoparlante2">
+    </div>
+    
+  </div>
+  <!-- Botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto8" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto8" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+        <div class="card-body">
+          <h5>Vaso Térmico Heizen con Parlante </h5>
+          <p class="descripcion">
+            Vaso Térmico Heizen 700ml: Tu bebida perfecta y tu música favorita en un solo lugar. Con parlante 
+            Bluetooth integrado, tapa hermética y aislamiento de doble pared, 
+            este vaso de acero inoxidable es ideal para cualquier aventura.
+          </p>
+          <p class="precio">Bs 140</p>
+          <p class="cuotas">Consulta los precios a credito</p>
+          <a href="https://wa.me/59170763090?text=Hola Ardilla, Me%20interesa el Vaso Térmico Heizen con Parlante"
+             class="btn btn-success w-100" target="_blank">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>  <!-- PRODUCTO 8 --> 
+    
+
+
+
+
+    
+
+
+
+
+
+   
+
+    
+
+    
 
 
 
